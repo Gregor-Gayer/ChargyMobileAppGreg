@@ -41,10 +41,11 @@ sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 ```
 
-Afterwards you can install the remaining software using the node packet manager
+Afterwards you can install the remaining software using the node packet manager. Important: use the mentioned Versions, ohterwise an error may occur additionally its not very easy to get rid of the newest versions and install the older ones.
+Therefore it is recommendet to stick to the mentioned Version.
 ```
-$ npm install -g cordova@latest
-+ cordova@9.0.0
+npm install -g cordova@9.0.0
+
 ```
 
 ```
