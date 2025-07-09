@@ -42,7 +42,8 @@ sudo apt install nodejs
 ```
 
 Afterwards you can install the remaining software using the node packet manager. Important: use the mentioned Versions, ohterwise an error may occur. Additionally its not very easy to get rid of the newest versions and install the older ones.
-Therefore it is recommendet to stick to the mentioned Version.
+Therefore it is recommended to stick to the mentioned Version.
+
 ```
 npm install -g cordova@9.0.0
 ```
@@ -60,7 +61,7 @@ npm install -g sass@1.20.1
 
 The Chargy git repository can be cloned via the following command.
 ```
-$ git clone https://github.com/OpenChargingCloud/ChargyMobileApp.git
+git clone https://github.com/OpenChargingCloud/ChargyMobileApp.git
 ```
 
 Afterwards all node.js dependencies and additional Open Source Software libraries have to be downloaded.
@@ -75,17 +76,32 @@ $ cordova prepare
 In order to test Chargy within the local browser just type the following command and Cordova will open the application within your default web browser automatically.
 
 ```
-$ cordova run browser
+cordova run browser
 ```
 
 In order to test it using the Electron framework
 ```
-$ cordova run cordova-electron
+cordova run cordova-electron
 ```
 
 To test Chargy on your Android smart phone please install [Android Studio](https://developer.android.com/studio), attach your smart phone via USB to your computer and run the following command. If you have installed the Android simulators and did not attach your smart phone Chary will be started within the default simulator profile.
 
 ```
-$ cordova run android
+cordova run android
 ```
 
+## Rebuild the project from scratch
+
+In case the cloned project does not work, one can find the REBUILD.md in the documentation. Follow these steps to build the project.
+After that you need to do some finishing steps:
+- Get Android Studio to get the SDK.
+- Create the environment variable ANDROID_SDK_ROOT and ANDROID_SDK (both get the same path C:/Users/HereIsYourActualUser/AppData/Local/Android/Sdk)
+- install browserify with
+```
+npm install browserify
+```
+- Establish JAVA_HOME (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
+
+The file build.gradle. (in .../ChargyMobileApp/platforms/android/CordovaLib) needs an alteration on:
+buildscript{
+repositories{
