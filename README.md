@@ -93,15 +93,31 @@ cordova run android
 ## Rebuild the project from scratch
 
 In case the cloned project does not work, one can find the REBUILD.md in the documentation. Follow these steps to build the project.
-After that you need to do some finishing steps:
-- Get Android Studio to get the SDK.
-- Create the environment variable ANDROID_SDK_ROOT and ANDROID_SDK (both get the same path C:/Users/HereIsYourActualUser/AppData/Local/Android/Sdk)
-- install browserify with
+
+Afterwards you need to do some finishing steps:
+- Get __*Android Studio*__ to get the SDK.
+- Create the environment variable __*ANDROID_SDK_ROOT*__ and __*ANDROID_SDK*__ (both get the same path C:/Users/HereIsYourActualUser/AppData/Local/Android/Sdk)
+- install browserify with:
 ```
 npm install browserify
 ```
-- Establish JAVA_HOME (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
+- Establish __*JAVA_HOME*__ (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
 
-The file build.gradle. (in .../ChargyMobileApp/platforms/android/CordovaLib) needs an alteration on:
+The file __*build.gradle.*__ (in .../ChargyMobileApp/platforms/android/CordovaLib) needs an alteration on:
 buildscript{
 repositories{
+__*maven { url ’https://repo.grails.org/grails/core/’} }}*__
+
+The file __*check_reqs.js*__ (in .../ChargyMobileApp/platforms/android/cordova/lib) needs an addition in line 91
+__*{shell:true}*__
+
+To start the Chargy-Application directly on the smartphone use
+```
+cordova run android -devicde
+```
+
+## Final execution notes
+
+1. The chosen Smartphone needs the developermode switched __*on*__
+2. USB debugging needs to be switchen __*on*__
+3. A direct installation for Chargy on your smartphone is possible with the __*app-debug.apk-file*__ 
