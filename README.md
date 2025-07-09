@@ -107,7 +107,9 @@ npm install browserify
 The file __*build.gradle.*__ (in .../ChargyMobileApp/platforms/android/CordovaLib) needs an alteration on:
 
 buildscript{
+
 repositories{
+
 __*maven { url ’https://repo.grails.org/grails/core/’} }}*__
 
 
