@@ -103,10 +103,13 @@ npm install browserify
 ```
 - Establish __*JAVA_HOME*__ (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
 
+
 The file __*build.gradle.*__ (in .../ChargyMobileApp/platforms/android/CordovaLib) needs an alteration on:
+
 buildscript{
 repositories{
 __*maven { url ’https://repo.grails.org/grails/core/’} }}*__
+
 
 The file __*check_reqs.js*__ (in .../ChargyMobileApp/platforms/android/cordova/lib) needs an addition in line 91
 __*{shell:true}*__
