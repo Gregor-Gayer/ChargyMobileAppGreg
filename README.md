@@ -61,7 +61,7 @@ $ npm install -g sass@1.20.1
 
 The Chargy git repository can be cloned via the following command.
 ```
-git clone https://github.com/OpenChargingCloud/ChargyMobileApp.git
+$ git clone https://github.com/OpenChargingCloud/ChargyMobileApp.git
 ```
 
 Afterwards all node.js dependencies and additional Open Source Software libraries have to be downloaded.
@@ -76,18 +76,18 @@ $ cordova prepare
 In order to test Chargy within the local browser just type the following command and Cordova will open the application within your default web browser automatically.
 
 ```
-cordova run browser
+$ cordova run browser
 ```
 
 In order to test it using the Electron framework
 ```
-cordova run cordova-electron
+$ cordova run cordova-electron
 ```
 
 To test Chargy on your Android smart phone please install [Android Studio](https://developer.android.com/studio), attach your smart phone via USB to your computer and run the following command. If you have installed the Android simulators and did not attach your smart phone Chary will be started within the default simulator profile.
 
 ```
-cordova run android
+$ cordova run android
 ```
 
 
@@ -100,7 +100,7 @@ Afterwards you need to do some additional steps:
 - Create the environment variable __*ANDROID_SDK_ROOT*__ and __*ANDROID_SDK*__ (both get the same path C:/Users/HereIsYourActualUser/AppData/Local/Android/Sdk)
 - install browserify with:
 ```
-npm install browserify
+$ npm install browserify
 ```
 - Establish __*JAVA_HOME*__ (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
 
@@ -122,7 +122,7 @@ __*{shell:true}*__
 
 To start the Chargy-Application directly on the smartphone use
 ```
-cordova run android -device
+$ cordova run android -device
 ```
 
 ## Final execution notes
