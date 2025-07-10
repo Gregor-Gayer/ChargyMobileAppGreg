@@ -45,15 +45,15 @@ Afterwards you can install the remaining software using the node packet manager.
 Therefore it is recommended to stick to the mentioned Version.
 
 ```
-npm install -g cordova@9.0.0
+$ npm install -g cordova@9.0.0
 ```
 
 ```
-npm install -g typescript@3.4.5
+$ npm install -g typescript@3.4.5
 ```
 
 ```
-npm install -g sass@1.20.1
+$ npm install -g sass@1.20.1
 ```
 
 
