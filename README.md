@@ -105,7 +105,7 @@ npm install browserify
 - Establish __*JAVA_HOME*__ (Note: JDK8 should be installed, every other version should be deleted for no mix-up in the building process)
 
 
-## File Edditing
+## File Editing
 
 The final steps include some additions and alterations in some Files.
 
