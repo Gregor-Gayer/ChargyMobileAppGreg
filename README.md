@@ -93,7 +93,7 @@ cordova run android
 
 ## Rebuild the project from scratch
 
-In case the cloned project does not work, one can find the REBUILD.md in the documentation. Follow these steps to build the project.
+In case the cloned project does not work, you can find the REBUILD.md in the documentation. Follow these steps to build the project.
 
 Afterwards you need to do some additional steps:
 - Get __*Android Studio*__ to get the SDK.
