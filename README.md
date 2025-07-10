@@ -122,7 +122,7 @@ __*{shell:true}*__
 
 To start the Chargy-Application directly on the smartphone use
 ```
-cordova run android -devicde
+cordova run android -device
 ```
 
 ## Final execution notes
